@@ -14,6 +14,13 @@ while (true){
             pacotes.push(numero_ratreio)
             console.log("Pacote adicionado ")
         case "2":
+            numero_ratreio = 234
+            pacotes.forEach(i => {
+                if (numero_ratreio === i){
+                    
+                }
+                
+            });
             
     }
 }
