@@ -96,6 +96,7 @@ BtnTeste.addEventListener("click", () =>{
     
 
 })
+
 BtnCodigo.addEventListener("click", () =>{
     codigo.classList.toggle('active2');
 

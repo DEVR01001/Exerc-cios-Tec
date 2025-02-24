@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maratona Programação</title>
-    <script src="Game_pedra_papel_tesoura.js" defer></script> 
+    <!-- <script src="Game_pedra_papel_tesoura.js" defer></script>  -->
     <script src="ratreio_pacote.js" defer></script> 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,9 +62,9 @@
         .resultado{
         display: flex;
         flex-direction: column;
-        opacity: 0;
-        height: 0;
-        width: 0%;
+        opacity: 1;
+        height: 100%;
+        width:100%;
         padding: 1rem;
         border: 1px solid #6d6d6d;
         border-radius: 5px;
@@ -102,27 +102,6 @@
             padding: 1rem;
         }
     </style>
-    <h6>Exercicio 1 - Pedra,Papel e Tesoura</h6>
-    <button id="btn_teste" class="teste">Teste</button>
-    <form id="form" class="resultado">
-        <input id="input_nome" type="text">
-        <input id="input_jogada" type="text">
-        <button type="button" id="btn_jogar">Jogar</button>
-        <div id="escolha" class="conteudo_result"></div>
-        <div id="conteudo_result" class="conteudo_result"></div>
-    </form>
-
-
-    <button id ="btn_codigo" class="teste">Código</button>
-    <div id="codigo" class="codigo">
-        <textarea name="" id="textcodigo" cols="30" rows="10"></textarea>
-    </div>
-
-
-
-
-
-
 
     <h6>Exercicio 2 - O Mundo nas Suas Mãos: Você sabe como se dá o Rastreamento Pacotes</h6>
     <button id="btn_teste" class="teste">Teste</button>
