@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maratona Programação</title>
-    <!-- <script src="Game_pedra_papel_tesoura.js" defer></script>  -->
-    <script src="ratreio_pacote.js" defer></script> 
+
+    <script src="asentos_avião.js" defer ></script>
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,7 +46,7 @@
 
         }
         .codigo{
-        display: flex;
+            display: flex;
         flex-direction: column;
         opacity: 0;
         height: 0;
@@ -64,7 +65,7 @@
         flex-direction: column;
         opacity: 1;
         height: 100%;
-        width:100%;
+        width: 100%;
         padding: 1rem;
         border: 1px solid #6d6d6d;
         border-radius: 5px;
@@ -74,7 +75,7 @@
         }
 
         .active{
-        width: 20%;
+        width: 30%;
         height: 100%;
         opacity: 1;
 
@@ -87,8 +88,8 @@
 
         overflow: hidden;
         }
-
         
+
         .conteudo_result{
             color: #6d6d6d;
             font-size: 18px;
@@ -102,30 +103,29 @@
             padding: 1rem;
         }
     </style>
-
-    <h6>Exercicio 2 - O Mundo nas Suas Mãos: Você sabe como se dá o Rastreamento Pacotes</h6>
-    <button id="btn_teste2" class="teste">Teste</button>
+    <h6>Exercicio 3 - "Uma Jornada nas Nuvens: Comprando Sua Passagem de Avião com Escolha de Assento"</h6>
+    <button id="btn_teste" class="teste btn_teste">Teste</button>
     <form id="form" class="resultado">
-        <div id="pergunta" class="pergunta">
+        <div id="pergunta1" class="pergunta">
         </div>
-        <input id="input_escolha" type="number" placeholder="Digite...">
-        <div id="inputteste" class="inputteste"></div>
-        <div id="btn_input" class="inputteste"></div>
-        <button type="button" id="btn_jogar">Escolher</button>
-        <div id="resultado" class="pergunta">s: </div>
-        
+        <input id="input_fileiras" type="text" placeholder="Numeros de Fileiras...">
+        <input id="input_cadeiras" type="text" placeholder="Numeros de Cadeiras...">
+        <button type="button" id="btn_jogar">Definir</button>
+        <input id="input_escolha" type="text" placeholder="Escolha uma opção: ">
+        <button type="button" id="btn_jogar2">Escolher</button>
+        <div id="resultado" class="pergunta"> </div>
+        <textarea name="" id="textassento" cols="30" rows="10"></textarea>
     </form>
-    
 
 
-    <button id ="btn_codigo" class="teste">Código</button>
+    <button id ="btn_codigo" class="teste btn_codigo">Código</button>
     <div id="codigo" class="codigo">
         <textarea name="" id="textcodigo" cols="30" rows="10"></textarea>
     </div>
+
+
+
+
    
-   
-
-
-
 </body>
 </html>
