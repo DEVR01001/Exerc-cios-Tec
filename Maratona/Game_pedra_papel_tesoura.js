@@ -82,30 +82,40 @@ btn_jogar.addEventListener("click", ()=>{
 })
 
 
-const BtnTeste = document.getElementById("btn_teste")
-const BtnCodigo = document.getElementById("btn_codigo")
+const BtnTeste = document.querySelectorAll(".btn_teste")
+const BtnCodigo = document.querySelectorAll(".btn_codigo")
 const Form = document.getElementById("form")
 const codigo = document.getElementById("codigo")
 const textcodigo = document.getElementById("textcodigo")
   
 
+BtnTeste.forEach(btnteste => {
+    btnteste.addEventListener("click", ()=>{
+        Form.classList.toggle('active');
 
-BtnTeste.addEventListener("click", () =>{
-    Form.classList.toggle('active');
+    })
 
     
+});
 
-})
 
-BtnCodigo.addEventListener("click", () =>{
-    codigo.classList.toggle('active2');
+BtnCodigo.forEach(btncodigo => {
+    btncodigo.addEventListener("click", ()=>{
+        codigo.classList.toggle('active2');
+
+    })
+
+    
+});
+
+
 
     textcodigo.innerHTML=`
     function getRandomIntInclusive(min, max) {
         min = Math.ceil(min);
         max = Math.floor(max);
         return Math.floor(Math.random() * (max - min + 1)) + min;
-      }
+    }
     
 function Jogo(nome,jogada){
 
@@ -186,7 +196,7 @@ const BtnCodigo = document.getElementById("btn_codigo")
 const Form = document.getElementById("form")
 const codigo = document.getElementById("codigo")
 const textcodigo = document.getElementById("textcodigo")
-  
+
 
 
 BtnTeste.addEventListener("click", () =>{
@@ -201,10 +211,4 @@ BtnTeste.addEventListener("click", () =>{
 
 
     
-
-})
-
-
-
-
 
