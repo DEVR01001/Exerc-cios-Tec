@@ -12,7 +12,9 @@ DivPergunta.innerHTML = `1 - Solicitar Táxi<br>
 3 - Sair <br>`;
 
 
-let DicTaxi ={};
+let DicTaxi = {};
+
+
 
 btn_jogar.addEventListener("click", ()=>{
     let numtaxi = parseInt(input_taxi.value.trim());

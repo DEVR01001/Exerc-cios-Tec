@@ -26,11 +26,6 @@ btn_jogar.addEventListener("click", () => {
 
     let N_cadeiras = parseInt(InputCadeira.value.trim());
 
-    if (isNaN(N_fileira) || isNaN(N_cadeiras) || N_fileira <= 0 || N_cadeiras <= 0) {
-        alert("Por favor, insira valores válidos para fileiras e cadeiras.");
-        return;
-    }
-
     dicLista = {}; 
 
     for (let i = 1; i <= N_fileira; i++) {
