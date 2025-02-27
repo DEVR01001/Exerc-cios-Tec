@@ -24,31 +24,31 @@ function Jogo(nome,jogada){
 
     }else{
         if (maquina === "Papel" && jogada ==="Pedra"){
-            const resultado = `Computador escolheu: ${maquina} = Computador venceu!`
+            const resultado = `Computador escolheu: ${maquina} <br><br>  Computador venceu!`
             return resultado;
 
         }else if(maquina === "Pedra" && jogada ==="Tesoura"){
-            const resultado = `Computador escolheu: ${maquina}  = Computador venceu!`
+            const resultado = `Computador escolheu: ${maquina}  <br><br>   Computador venceu!`
             return resultado;
         
 
         }else if(maquina === "Tesoura" && jogada ==="Papel"){
-            const resultado = `Computador escolheu: ${maquina} = Computador venceu!`
+            const resultado = `Computador escolheu: ${maquina} <br><br>   Computador venceu!`
             return resultado;
 
 
         }else if(maquina === "Pedra" && jogada ==="Papel"){
-            const resultado = `Computador escolheu: ${maquina} = ${nome} venceu!`
+            const resultado = `Computador escolheu: ${maquina} <br><br>   ${nome} venceu!`
             return resultado;
 
 
         }else if(maquina === "Tesoura" && jogada ==="Pedra"){
-            const resultado = `Computador escolheu: ${maquina} = ${nome} venceu!`
+            const resultado = `Computador escolheu: ${maquina} <br><br>  ${nome} venceu!`
             return resultado;
 
 
         }else if(maquina === "Papel" && jogada ==="Tesoura"){
-            const resultado = `Computador escolheu: ${maquina} = ${nome} venceu!`
+            const resultado = `Computador escolheu: ${maquina} <br><br>   ${nome} venceu!`
             return resultado;
         
 
@@ -82,31 +82,31 @@ btn_jogar.addEventListener("click", ()=>{
 })
 
 
-const BtnTeste = document.querySelectorAll(".btn_teste")
-const BtnCodigo = document.querySelectorAll(".btn_codigo")
-const Form = document.getElementById("form")
-const codigo = document.getElementById("codigo")
-const textcodigo = document.getElementById("textcodigo")
+// const BtnTeste = document.querySelectorAll(".btn_teste")
+// const BtnCodigo = document.querySelectorAll(".btn_codigo")
+// const Form = document.getElementById("form")
+// const codigo = document.getElementById("codigo")
+// const textcodigo = document.getElementById("textcodigo")
   
 
-BtnTeste.forEach(btnteste => {
-    btnteste.addEventListener("click", ()=>{
-        Form.classList.toggle('active');
+// BtnTeste.forEach(btnteste => {
+//     btnteste.addEventListener("click", ()=>{
+//         Form.classList.toggle('active');
 
-    })
-
-    
-});
-
-
-BtnCodigo.forEach(btncodigo => {
-    btncodigo.addEventListener("click", ()=>{
-        codigo.classList.toggle('active2');
-
-    })
+//     })
 
     
-});
+// });
+
+
+// BtnCodigo.forEach(btncodigo => {
+//     btncodigo.addEventListener("click", ()=>{
+//         codigo.classList.toggle('active2');
+
+//     })
+
+    
+// });
 
 
 
