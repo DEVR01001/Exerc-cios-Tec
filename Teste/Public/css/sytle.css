@@ -1,0 +1,188 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    display: flex;
+    width: 99vw;
+    height: 100vh;
+}
+
+.main2{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+
+}
+
+
+header{
+    display: flex;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    padding-top: 1rem;
+
+}
+
+nav ul{
+    display: flex;
+    width: 100%;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a{
+    display: flex;
+    color: rgb(65, 65, 65);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover{
+    color: rgb(134, 134, 134);
+}
+
+
+
+
+
+
+
+.container_form{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.container_form form{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.container_form form .itemflex{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.itemflex label{
+    display: flex;
+    color:#414141 ;
+    font-size: 15px;
+}
+
+.itemflex input{
+    display: flex;
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    color: #414141;
+    border: none;
+    background-color: #efefef;
+}
+
+title{
+    display: flex;
+    padding-bottom: 1rem;
+    font-size: 16px;
+    color: #414141;
+    font-weight: 500;
+    width: 90%;
+    padding-top: 2rem;
+}
+
+.container_btn{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    padding-right: 2rem;
+    align-items: center;
+    padding-top: 1rem;
+
+}
+
+.container_btn button{
+    display: flex;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(168, 244, 54);
+    justify-content: center;
+    align-items: center;
+    color: #414141;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+
+.main2 table{
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 3rem;
+
+}
+
+td, th {
+    text-align: center;
+    padding: 8px;
+  }
+
+  th{
+    border-bottom: 1px solid rgb(220, 220, 220);
+  }
+
+  td a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  td a .fa-solid{
+    color: #414141;
+    cursor: pointer;
+    display: flex;
+  }

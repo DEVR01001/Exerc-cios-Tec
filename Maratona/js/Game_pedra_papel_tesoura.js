@@ -19,7 +19,7 @@ function Jogo(nome,jogada){
 
 
     if (maquina === jogada){
-        const resultado = `Computador escolheu: ${maquina}  = Empate`
+        const resultado = `Computador escolheu: ${maquina}  = <br><br>  Empate`
         return resultado;
 
     }else{
